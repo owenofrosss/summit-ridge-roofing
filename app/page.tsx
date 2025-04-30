@@ -52,6 +52,11 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
+        {/* Urgency Banner */}
+        <div className="w-full bg-amber-400 text-center py-2 text-sm font-semibold text-[#1e2a38]">
+          Storm season is here! Book your free inspection before our schedule fills up.
+        </div>
+
         {/* Hero Section */}
         <section className="relative bg-[#1e2a38] overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -65,7 +70,255 @@ export default function Home() {
             />
           </div>
           <div className="container relative z-10 py-20 md:py-32 lg:py-40 text-white">
+            {/* Trust Bar */}
+            <div className="flex flex-wrap gap-4 justify-center mb-6">
+              <div className="flex items-center gap-2 bg-white/20 px-3 py-1.5 rounded-full text-white text-sm font-medium">
+                <Shield className="h-5 w-5" /> Licensed & Insured
+              </div>
+              <div className="flex items-center gap-2 bg-white/20 px-3 py-1.5 rounded-full text-white text-sm font-medium">
+                <Award className="h-5 w-5" /> BBB A+ Rating
+              </div>
+              <div className="flex items-center gap-2 bg-white/20 px-3 py-1.5 rounded-full text-white text-sm font-medium">
+                <Award className="h-5 w-5" /> GAF Certified
+              </div>
+              <div className="flex items-center gap-2 bg-white/20 px-3 py-1.5 rounded-full text-white text-sm font-medium">
+                <Award className="h-5 w-5" /> Owens Corning Preferred
+              </div>
+              <div className="flex items-center gap-2 bg-white/20 px-3 py-1.5 rounded-full text-white text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="text-amber-400"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" /></svg> 4.9 Google Reviews
+                <a href="https://www.google.com/search?q=Summit+Ridge+Roofing+reviews" target="_blank" rel="noopener" className="underline text-white/80 ml-1">See Reviews</a>
+              </div>
+            </div>
             <AnimatedHero />
+            {/* Request a Callback Mini-Form */}
+            <form className="bg-white/90 rounded-lg shadow-lg p-4 mt-8 max-w-md mx-auto flex flex-col gap-2">
+              <div className="text-[#1e2a38] font-bold text-lg mb-1 flex items-center gap-2"><Phone className="h-5 w-5" /> Request a Callback</div>
+              <input type="text" placeholder="Your Name" className="rounded px-3 py-2 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#1e2a38]" required />
+              <input type="tel" placeholder="Phone Number" className="rounded px-3 py-2 border border-slate-300 focus:outline-none focus:ring-2 focus:ring-[#1e2a38]" required />
+              <button type="submit" className="bg-[#1e2a38] text-white font-semibold rounded py-2 mt-1 hover:bg-[#24344a] transition">Request Callback</button>
+              <span className="text-xs text-slate-500 text-center">No obligation. We respect your privacy.</span>
+            </form>
+          </div>
+        </section>
+
+        {/* Testimonials Section - moved up for social proof */}
+        <section className="py-12 md:py-16 bg-slate-50">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-10">
+              <h2 className="text-3xl font-bold tracking-tight text-[#1e2a38] sm:text-4xl mb-4">
+                What Our Customers Say
+              </h2>
+              <p className="text-slate-600">
+                Don't just take our word for it. Here's what our satisfied customers have to say about our work.
+              </p>
+              <a href="https://www.google.com/search?q=Summit+Ridge+Roofing+reviews" target="_blank" rel="noopener" className="inline-block mt-2 text-[#1e2a38] underline font-medium">See More Reviews</a>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm border">
+                <div className="flex items-center gap-1 text-amber-400 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <p className="text-slate-600 mb-4">
+                  "Summit Ridge replaced our roof after storm damage, and they were fantastic from start to finish. They
+                  helped with our insurance claim and completed the work quickly and professionally. Our new roof looks
+                  amazing!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center">
+                    <span className="text-[#1e2a38] font-medium">JM</span>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#1e2a38]">Jennifer M.</p>
+                    <p className="text-sm text-slate-500">Asheville, NC</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border">
+                <div className="flex items-center gap-1 text-amber-400 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <p className="text-slate-600 mb-4">
+                  "We had a leak during a heavy storm and Summit Ridge came out the same day for emergency repairs. They
+                  were professional, efficient, and reasonably priced. Later, they replaced our entire roof and did an
+                  outstanding job."
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center">
+                    <span className="text-[#1e2a38] font-medium">RB</span>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#1e2a38]">Robert B.</p>
+                    <p className="text-sm text-slate-500">Hendersonville, NC</p>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-sm border">
+                <div className="flex items-center gap-1 text-amber-400 mb-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    stroke="none"
+                  >
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <p className="text-slate-600 mb-4">
+                  "As a first-time homeowner, I was nervous about getting a new roof. The team at Summit Ridge walked me
+                  through every step of the process and helped me choose the perfect shingles for my home. Couldn't be
+                  happier!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center">
+                    <span className="text-[#1e2a38] font-medium">SL</span>
+                  </div>
+                  <div>
+                    <p className="font-medium text-[#1e2a38]">Sarah L.</p>
+                    <p className="text-sm text-slate-500">Black Mountain, NC</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -594,6 +847,11 @@ export default function Home() {
 
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-[#1e2a38] text-white">
+          <div className="flex flex-wrap gap-4 justify-center mb-6">
+            <div className="flex items-center gap-2 bg-white/20 px-3 py-1.5 rounded-full text-white text-sm font-medium">
+              <Shield className="h-5 w-5" /> 100% Satisfaction Guarantee
+            </div>
+          </div>
           <AnimatedCTA />
         </section>
       </main>
@@ -756,6 +1014,11 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Sticky Mobile CTA */}
+      <div className="fixed bottom-4 left-0 right-0 z-50 flex justify-center md:hidden pointer-events-none">
+        <a href="#contact" className="pointer-events-auto bg-[#1e2a38] text-white font-bold rounded-full px-8 py-3 shadow-lg hover:bg-[#24344a] transition text-lg">Get a Free Estimate</a>
+      </div>
     </div>
   )
 }

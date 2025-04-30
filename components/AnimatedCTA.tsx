@@ -40,15 +40,12 @@ export default function AnimatedCTA() {
           >
             <Link href="#contact">Get a Free Estimate</Link>
           </Button>
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="border-white text-white hover:bg-white/10 shadow-lg hover:scale-105 transition-all duration-200"
-            style={{ color: '#fff', borderColor: '#fff' }}
+          <a
+            href="tel:8285558822"
+            className="inline-flex items-center text-white text-lg font-semibold hover:underline focus:outline-none focus:underline transition-all duration-150"
           >
-            <a href="tel:8285558822">Call (828) 555-8822</a>
-          </Button>
+            (828) 555-8822
+          </a>
         </motion.div>
       </div>
     </div>
